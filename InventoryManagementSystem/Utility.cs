@@ -7,7 +7,9 @@ class Program
 
         Inventory inventory = new Inventory();
 
-        while (true)
+        bool exit = false;
+
+        while (!exit)
         {
             Console.WriteLine("Inventory Management System: ");
             Console.WriteLine("1. Add Product");
@@ -60,10 +62,14 @@ class Program
 
                 case "5":
 
+                    Console.Write("Enter a Product Name to Search: ");
+                    name = Console.ReadLine();
+                    inventory.SearchProduct(name);
+
                     break;
 
                 case "6":
-
+                   
                     break;
 
                 default:
