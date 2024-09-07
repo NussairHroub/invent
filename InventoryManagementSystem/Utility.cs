@@ -69,7 +69,7 @@ class Program
                     break;
 
                 case "6":
-                   
+                    exit = true;
                     break;
 
                 default:
