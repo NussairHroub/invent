@@ -21,6 +21,12 @@ namespace InventoryManagementSystem
 		public double Price { set; get; }
 		public int Quantity { set; get; }
 
-	}
+        public override string ToString()
+        {
+			return "Product: " + name + ", Price: " + price + ", Quantity: " + quantity;
+
+        }
+
+    }
 }
 

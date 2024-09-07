@@ -37,7 +37,7 @@ class Program
                     inventory.AddProduct(product);
                     break;
                 case "2":
-
+                    inventory.ViewProducts();
                     break;
                 case "3":
                     break;
