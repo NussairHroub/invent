@@ -35,18 +35,33 @@ class Program
                     Product product = new Product(name, price, quantity);
 
                     inventory.AddProduct(product);
+
                     break;
+
                 case "2":
                     inventory.ViewProducts();
+
                     break;
+
                 case "3":
+                    Console.Write("Enter a Product Name to Edit: ");
+                    name = Console.ReadLine();
+                    inventory.EditProduct(name);
+
                     break;
+
                 case "4":
+
                     break;
+
                 case "5":
+
                     break;
+
                 case "6":
+
                     break;
+
                 default:
                     Console.WriteLine("Invalid Choice. Try Again.");
                     break;

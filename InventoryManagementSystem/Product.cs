@@ -3,27 +3,22 @@ namespace InventoryManagementSystem
 {
 	public class Product
 	{
-        private String name;
-        private double price;
-        private int quantity;
+        public string Name { get; set; }
+        public double Price { get; set; }
+        public int Quantity { get; set; }
 
-        public Product()
-		{
-		}
-		public Product(String name, double price, int quantity)
-		{
-			this.name = name;
-			this.price = price;
-			this.quantity = quantity;
-		}
+      
 
-		public string Name { set; get; }
-		public double Price { set; get; }
-		public int Quantity { set; get; }
+		public Product(string name, double price, int quantity)
+		{
+			Name = name;
+			Price = price;
+			Quantity = quantity;
+		}
 
         public override string ToString()
         {
-			return "Product: " + name + ", Price: " + price + ", Quantity: " + quantity;
+			return "Product: " + Name + ", Price: " + Price + ", Quantity: " + Quantity;
 
         }
 
