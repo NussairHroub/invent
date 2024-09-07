@@ -35,9 +35,6 @@ namespace InventoryManagementSystem
 			bool isFound = false;
 			foreach (var product in products)
 			{
-				Console.WriteLine(product.ToString());
-				Console.WriteLine(product.Price);
-                //Console.WriteLine(name);
                 if (product.Name == name)
 				{
 					isFound = true;
@@ -60,6 +57,27 @@ namespace InventoryManagementSystem
 				Console.WriteLine("Product not found.");
 			}
 		}
+
+		public void DeleteProduct(string name)
+		{
+            bool isFound = false;
+            foreach (var product in products)
+            {
+                if (product.Name == name)
+                {
+                    isFound = true;
+					products.Remove(product);
+
+                    Console.WriteLine("Product Deleted Successfully.");
+					break;
+
+                }
+            }
+            if (!isFound)
+            {
+                Console.WriteLine("Product not found.");
+            }
+        }
 		
 	}
 }

@@ -52,6 +52,10 @@ class Program
 
                 case "4":
 
+                    Console.Write("Enter a Product Name to Delete: ");
+                    name = Console.ReadLine();
+                    inventory.DeleteProduct(name);
+
                     break;
 
                 case "5":
